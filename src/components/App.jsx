@@ -38,7 +38,7 @@ export const App = () => {
   const countPositiveFeedbackPercentage = useCallback(() => {
     let positivePct = (Number(countTotalFeedback() === 0 ? 0 : (good / countTotalFeedback()) * 100).toFixed(0))
     return positivePct
-  }, [good, neutral, bad, countTotalFeedback]);
+  }, [good, countTotalFeedback]);
 
   useEffect(() => {
     countTotalFeedback()
