@@ -42,7 +42,7 @@ export const App = () => {
   useEffect(() => {
     countTotalFeedback()
     countPositiveFeedbackPercentage()
-  }, [good, neutral, bad])
+  }, [countTotalFeedback, countPositiveFeedbackPercentage])
 
     return (
       <div className={css.feedbackForm}>
