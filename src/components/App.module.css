@@ -1,0 +1,7 @@
+.feedbackForm {
+  margin: 20px auto;
+  display: flex;
+  width: 700px;
+  gap: 20px;
+  height: 200px;
+}
